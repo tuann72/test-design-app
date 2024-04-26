@@ -23,7 +23,7 @@ export default function navBar({children}: Props) {
   return (
     <aside className='h-screen w-fit'>
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
-        <div className="p-4 pb-2 flex justify-between items-center">
+        <div className="p-4 pb-2 flex justify-between">
           <img src="/logoipsum-235.svg" 
           className={`overflow-hidden transition-all 
           ${expanded ? "w-32" : "w-0"}`} 
@@ -61,7 +61,7 @@ export function NavBarItem({icon, text}: {icon: React.ReactNode, text: string}){
     font-medium rounded-md cursor-pointer hover:bg-green-50 text-gray-600"`}>
       {icon}
       <span className={`overflow-hidden transition-all 
-          ${expanded ? "w-52 ml-3" : "w-0"}`}>{text}</span>
+          ${expanded ? "w-352 ml-3" : "w-0"}`}>{text}</span>
     </li>
   )
 }
