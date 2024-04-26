@@ -15,14 +15,14 @@ function page() {
   return (
     <div>
       <NavBar>
-        <NavBarItem icon={<LayoutDashboard size={20}/>} text={'Dashboard'} active={false} alert={false} />
-        <NavBarItem icon={<BarChart3 size={20}/>} text={'Statistics'} active={false} alert={false} />
-        <NavBarItem icon={<UserCircle size={20}/>} text={'Users'} active={false} alert={false} />
-        <NavBarItem icon={<Boxes size={20}/>} text={'Boxes'} active={false} alert={false} />
-        <NavBarItem icon={<Package size={20}/>} text={'Orders'} active={false} alert={false} />
-        <NavBarItem icon={<Receipt size={20}/>} text={'Receipt'} active={false} alert={false} />
-        <NavBarItem icon={<Settings size={20}/>} text={'Settings'} active={false} alert={false} />
-        <NavBarItem icon={<LifeBuoy size={20}/>} text={'Help'} active={false} alert={false} />
+        <NavBarItem icon={<LayoutDashboard size={20}/>} text={'Dashboard'}   />
+        <NavBarItem icon={<BarChart3 size={20}/>} text={'Statistics'}  />
+        <NavBarItem icon={<UserCircle size={20}/>} text={'Users'}  />
+        <NavBarItem icon={<Boxes size={20}/>} text={'Boxes'}  />
+        <NavBarItem icon={<Package size={20}/>} text={'Orders'}  />
+        <NavBarItem icon={<Receipt size={20}/>} text={'Receipt'}  />
+        <NavBarItem icon={<Settings size={20}/>} text={'Settings'}  />
+        <NavBarItem icon={<LifeBuoy size={20}/>} text={'Help'}  />
       </NavBar>
     </div>
   )
