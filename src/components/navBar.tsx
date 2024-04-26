@@ -61,7 +61,7 @@ export function NavBarItem({icon, text}: {icon: React.ReactNode, text: string}){
     font-medium rounded-md cursor-pointer hover:bg-green-50 text-gray-600"`}>
       {icon}
       <span className={`overflow-hidden transition-all 
-          ${expanded ? "w-352 ml-3" : "w-0"}`}>{text}</span>
+          ${expanded ? "w-52 ml-3" : "w-0"}`}>{text}</span>
     </li>
   )
 }
