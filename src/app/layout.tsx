@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import NavBar, {NavBarItem} from "@/components/navBar";
+
+import {
+  LifeBuoy,
+  Package,
+  UserCircle,
+  BarChart3,
+  LayoutDashboard,
+  Settings
+} from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"] });
 const pop = Poppins({weight: "500", subsets: ["latin"]})
@@ -17,7 +27,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <div className="flex">
+          <NavBar>
+            <NavBarItem icon={<LayoutDashboard size={20}/>} text={'Dashboard'} loc={"/dashboard"}/>
+            <NavBarItem icon={<BarChart3 size={20}/>} text={'Statistics'} loc={"/statistics"}/>
+            <NavBarItem icon={<UserCircle size={20}/>} text={'Users'} loc={"/users"}/>
+            <NavBarItem icon={<Package size={20}/>} text={'Orders'} loc={"/orders"}/>
+            <NavBarItem icon={<Settings size={20}/>} text={'Settings'} loc={"/settings"}/>
+            <NavBarItem icon={<LifeBuoy size={20}/>} text={'Help'} loc={"/help"}/>
+          </NavBar>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
+
+
