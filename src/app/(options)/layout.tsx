@@ -13,7 +13,7 @@ const OptionLayout: React.FC = ({ children }: React.PropsWithChildren<{}>) => {
   return (
         <div className="flex">
         <NavBar>
-            <NavBarItem icon={<LayoutDashboard size={20}/>} text={'Gallary'} loc={"/gallary"}/>
+            <NavBarItem icon={<LayoutDashboard size={20}/>} text={'Gallary'} loc={"/gallery"}/>
             <NavBarItem icon={<BarChart3 size={20}/>} text={'Statistics'} loc={"/statistics"}/>
             <NavBarItem icon={<UserCircle size={20}/>} text={'Accounts'} loc={"/accounts"}/>
             <NavBarItem icon={<Package size={20}/>} text={'Orders'} loc={"/orders"}/>

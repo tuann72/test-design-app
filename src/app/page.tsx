@@ -1,11 +1,16 @@
 import React from 'react'; // Import React
-import startImg from '../../images/start.jpg'
+import { AuroraEffect } from '@/components/AuroraEffect';
 
 function page() {
   return (
     <div>
-      <div className='h-screen'>
-        test
+      <div>
+        <AuroraEffect 
+        slogan="Building Brands, Building Futures" 
+        text="Guiding companies through the branding process to create strong foundations for long-term growth."
+        btnText='Get started'
+        location="/gallery"
+        />
       </div>
     </div>
   )
