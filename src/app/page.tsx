@@ -1,9 +1,12 @@
 import React from 'react'; // Import React
+import startImg from '../../images/start.jpg'
 
 function page() {
   return (
     <div>
-      <h1>hello</h1>
+      <div className='h-screen'>
+        test
+      </div>
     </div>
   )
 }

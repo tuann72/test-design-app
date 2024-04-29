@@ -25,7 +25,7 @@ export default function navBar({children}: Props) {
   const router = useRouter()
 
   return (
-    <aside className='h-screen w-fit'>
+    <aside className='w-fit flex flex-col'>
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
         <div className="p-4 pb-2 flex justify-between">
           <img onClick={()=>router.push("/")} src="/logoipsum-235.svg" 
