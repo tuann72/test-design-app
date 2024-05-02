@@ -1,7 +1,8 @@
 "use client"
-import React, { useContext, useState, createContext } from 'react'
-import { ChevronFirst, ChevronLast } from 'lucide-react'
+import React, { useContext, useState, createContext } from 'react';
+import { ChevronFirst, ChevronLast } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 type Props = {
   children: React.ReactNode;
@@ -17,7 +18,7 @@ const SidebarContext = createContext<SidebarContextValue>({
   expanded: true, // Set an initial value for 'expanded'
 });
 
-export default function navBar({children}: Props) {
+export default function NavBar({children}: Props) {
 
   const [expanded, setExpanded] = useState(true)
   const router = useRouter()
@@ -26,7 +27,7 @@ export default function navBar({children}: Props) {
     <aside className='w-fit flex flex-col'>
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
         <div className="p-4 pb-2 flex justify-between">
-          <img onClick={()=>router.push("/")} src="/logoipsum-235.svg" 
+          <Image onClick={()=>router.push("/")} src="/logoipsum-235.svg" 
           className={`overflow-hidden transition-all cursor-pointer
           ${expanded ? "w-32 h-10" : "w-0 h-10"}`} 
           alt="" />
@@ -40,7 +41,7 @@ export default function navBar({children}: Props) {
         </SidebarContext.Provider>
 
         <div className='border-t flex p-3'>
-          <img src="/user-round.svg" className='w-8 h-8'/>
+          <Image src="/user-round.svg" className='w-8 h-8' alt="" />
         <div className={`flex justify-between items-center overflow-hidden transition-all 
           ${expanded ? "w-52 ml-3" : "w-0"}`}>
           <div className='leading-4'>

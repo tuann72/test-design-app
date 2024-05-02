@@ -1,4 +1,4 @@
-import NavBar, {NavBarItem} from "@/components/navBar";
+import NavBar, {NavBarItem} from "@/components/NavBarComp";
 
 import {
   LifeBuoy,

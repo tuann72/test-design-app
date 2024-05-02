@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import {motion, useMotionTemplate, useMotionValue, animate} from 'framer-motion';
 import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image'
 
 const COLORS: string[] = ["#14e81e", "#00ea8d", "#017ed5", "#b53dff", "#8d00c4"];
 
@@ -30,7 +31,7 @@ export const AuroraEffect = ({slogan, text, btnText, location}:{slogan:string, t
         }}
         className="relative grid min-h-screen w-screen place-content-center overflow-hidden bg-slate-100 px-4 py-24 text-gray-950">
             <div className="flex flex-col items-center">
-                <img className="h-30 w-80" src="/logoipsum-235.svg"/>
+                <Image className="h-30 w-80" src="/logoipsum-235.svg" alt=""/>
                 <h1 className="max-w-6xl text-5xl font-medium bg-gradient-to-b from-slate-400 to-slate-800 bg-clip-text text-transparent text-center pb-3">{slogan}</h1>
                 <p className="text-center pb-6">{text}</p>
                 <motion.button
