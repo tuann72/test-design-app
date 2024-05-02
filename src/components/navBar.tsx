@@ -3,8 +3,6 @@ import React, { useContext, useState, createContext } from 'react'
 import { ChevronFirst, ChevronLast } from 'lucide-react'
 import { useRouter } from 'next/navigation';
 
-
-
 type Props = {
   children: React.ReactNode;
 };

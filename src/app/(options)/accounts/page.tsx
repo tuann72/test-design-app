@@ -1,8 +1,11 @@
 import React from 'react'
+import staggerChildren, {imageChild} from '@/components/staggerItem'
 
 function page() {
   return (
-    <div>Gallary</div>
+    <div>
+      
+    </div>
   )
 }
 
